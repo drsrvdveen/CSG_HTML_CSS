@@ -1,4 +1,12 @@
 {
-  "postCreateCommand": "python3 -m http.server 3000",
-  "name": "HTML CSS Codespace"
+  "postCreateCommand": "python3 -m http.server 8080",
+  "name": "HTML CSS Codespace",
+
+  "portsAttributes": {
+    "8080": {
+      "label": "HTML CSS Omgeving",
+      "onAutoForward": "openPreview",
+      "elevateIfNeeded": true
+    }
+  }
 }
