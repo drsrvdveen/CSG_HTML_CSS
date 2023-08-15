@@ -1,10 +1,11 @@
 {
-  "postCreateCommand": "python3 -m http.server 8080",
-  "name": "HTML CSS Codespace",
-
+  "postStartCommand": "sh ./setup/start.sh",
+  "forwardPorts": [
+    8080
+  ],
   "portsAttributes": {
     "8080": {
-      "label": "HTML CSS Omgeving",
+      "label": "HTML/CSS-omgeving",
       "onAutoForward": "openPreview",
       "elevateIfNeeded": true
     }
