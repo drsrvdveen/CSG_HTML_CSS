@@ -1,5 +1,6 @@
 {
-  "postStartCommand": "sh ./setup/start.sh",
+  // "postStartCommand": "sh ./setup/start.sh",
+  "postStartCommand": "python3 -m http.server 8080",
   "forwardPorts": [
     8080
   ],
